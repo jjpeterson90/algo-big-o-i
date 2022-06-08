@@ -1,8 +1,8 @@
 # Big O Answers
 
 ## Snippet 1 -
-### Big O:
-### Explanation:
+### Big O: O(N)
+### Explanation: As array grows in size, the time it takes grows linearly.
 ```python
 def largest(array, value):
   for item in array:
@@ -13,8 +13,8 @@ def largest(array, value):
 
 
 ## Snippet 2 -
-### Big O:
-### Explanation:
+### Big O: O(2N) == O(N)
+### Explanation: Loops once through the same dataset two separate times.
 
 ```python
 def info_dump(customers):
@@ -30,8 +30,8 @@ def info_dump(customers):
 ```
 
 ## Snippet 3 -
-### Big O:
-### Explanation:
+### Big O: O(1)
+### Explanation: Only one action is performed regardless of dataset size
 
 ```python
 def first_element_is_red(array):
@@ -39,8 +39,8 @@ def first_element_is_red(array):
 ```
 
 ## Snippet 4 -
-### Big O:
-### Explanation:
+### Big O: O(N^2)
+### Explanation: O(N) loop with an O(N) loop inside of it. O(N) is performed N times. N * N = N^2
 
 ```python
 def duplicates(array):
@@ -54,8 +54,8 @@ def duplicates(array):
 ``` 
 
 ## Snippet 5 -
-### Big O:
-### Explanation:
+### Big O: O(N * M) roughly equal to O(N^2). Best case is O(N), if either array remains constant size.
+### Explanation: O(N) inside an O(N). Time complexity is slightly offset from N^2 since both datasets can have different sizes, but can be considered O(N^2) in worst case scenario
 
 ```python
 words = ['chocolate', 'coconut', 'rainbow']
@@ -68,8 +68,8 @@ for word in words:
 ```
 
 ## Snippet 6 -
-### Big O:
-### Explanation:
+### Big O: O(10N) = O(N)
+### Explanation: One iteration over a loop of size (N). O(10) if size remains static, O(N) if size can grow.
 
 ```python
 numbers = [1,2,3,4,5,6,7,8,9,10]
@@ -81,8 +81,8 @@ def print_array(array):
 ```
 
 ## Snippet 7 -
-### Big O:
-### Explanation:
+### Big O:  O(N^2)
+### Explanation:  O(N) loop with a growing zero-to-N loop inside. Can be simplified to N^2.
 
 ```python
 # this is insertion sort
@@ -97,8 +97,8 @@ def insertionSort(arr):
 ```
 
 ## Snippet 8 -
-### Big O:
-### Explanation:
+### Big O:  O(N^2)
+### Explanation:  O(N) loop with a decaying N-to-zero loop inside. Can be simplified to N^2.
 
 ```python
 for i in range(len(my_list)):

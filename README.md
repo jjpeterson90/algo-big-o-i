@@ -15,7 +15,7 @@ Give the efficiency of each of the following code snippets. Try out the code sni
 
 ### Problems for you
 
-Snippet 1 - Big O:
+Snippet 1 - Big O:  O(N)
 
 ```python
 def largest(array, value):
@@ -25,7 +25,7 @@ def largest(array, value):
   return True 
 ```
 
-Snippet 2 - Big O:
+Snippet 2 - Big O:  O(2N) = O(N)
 
 ```python
 def info_dump(customers):
@@ -40,13 +40,13 @@ def info_dump(customers):
   
 ```
 
-Snippet 3 - Big O:
+Snippet 3 - Big O:  O[1]
 ```python
 def first_element_is_red(array):
   return array[0] == 'red' 
 ```
 
-Snippet 4 - Big O:
+Snippet 4 - Big O:  O(N^2)
 ```python
 def duplicates(array):
   for index1, item1 in enumerate(array):
@@ -58,7 +58,7 @@ def duplicates(array):
   return False
 ```
 
-Snippet 5 - Big O:
+Snippet 5 - Big O:  O(N^2) if the arrays grow in size. O(2N) = O(N) if the arrays remain a constant size
 ```python
 words = ['chocolate', 'coconut', 'rainbow']
 endings = ['cookie', 'pie', 'waffle']
@@ -69,7 +69,7 @@ for word in words:
 
 ```
 
-Snippet 6 - Big O:
+Snippet 6 - Big O:  O(N)
 ```python
 numbers = [1,2,3,4,5,6,7,8,9,10]
 
@@ -79,7 +79,7 @@ def print_array(array):
 
 ```
 
-Snippet 7 - Big O:
+Snippet 7 - Big O:  O(N^2)
 
 ```python
 # this is insertion sort
@@ -93,7 +93,7 @@ def insertionSort(arr):
     arr[j+1] = key 
 ```
 
-Snippet 8 - Big O:
+Snippet 8 - Big O:  O(N^2)
 ```python
 for i in range(len(my_list)):
   min_idx = i
